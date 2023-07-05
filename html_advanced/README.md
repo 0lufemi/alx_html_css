@@ -1,2 +1,2 @@
-# HTML, Advanced
-Implementing a webpage from scratch from a Figma prototype
+# HTML, basic
+## 0. Structure
