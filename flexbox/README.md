@@ -62,4 +62,36 @@ Under that comment section, target the row class inside section-latest-news clas
 
     Property: flex-direction, Value: row-reverse
 
-The Latest news should appear in a reverse order. 
+The Latest news should appear in a reverse order.
+
+#  3. Simplify services list
+Using the files from the previous task for this task:
+
+flex-wrap is a property that can force the flex items to be in one or multiple lines. Learn more about it here.
+
+In the Services section of 3-index.html, remove the second ul and put the 3 lielements under the first ul
+
+Now, in your CSS file, before /*** 4. CARD ***/, add a new comment: /* Section SERVICES ============================= */
+
+Under that comment section, add a new selector targeting the row class inside the section-services class
+
+    Property: flex-wrap, Value: wrap
+
+# 4. Playing around with the spacing between flex service items
+Using the files from the previous task for this task:
+
+In 4-styles.css file, within the Grid section
+
+    In .col-1-3 selector
+        Replace the current width with calc((100% / 3) - 2rem)
+
+    In .col-1-2 selector
+        Replace the current width with calc((100% / 2) - 2rem)
+
+    In [class*='col-']
+        Remove the padding declaration
+        Set Property: margin to 1rem
+
+    In ul.row declaration
+        Replace the current margin with -1rem
+
