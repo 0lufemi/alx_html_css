@@ -100,21 +100,35 @@ Using the files from the previous task for this task:
 
 In your 5-index.html file, inside the Header section
 
-Wrap the div with class header-logo and the div with class navbar-menu with a div that has header-container as a class
+*Wrap the div with class header-logo and the div with class navbar-menu with a div that has header-container as a class
+
 In your 5-styles.css file,
 
-Inside the /* Header section
-Add a selector for the header-container class
-Property: display, Value: flex
-Property: justify-content, Value: space-between
-Remove header-logo and header-logo a rules
-Remove the navbar-menu rule
+*Inside the /* Header section
+*Add a selector for the header-container class
+    **Property: display, Value: flex
+    **Property: justify-content, Value: space-between
+*Remove header-logo and header-logo a rules
+*Remove the navbar-menu rule
 
-In the variables section
+*In the variables section
 
-Remove
-header-logo-position
-header-logo-link-display
-header-logo-link-position
-header-logo-link-top
-header-logo-link-left
+    **Remove
+        ***header-logo-position
+        ***header-logo-link-display
+        ***header-logo-link-position
+        ***header-logo-link-top
+        ***header-logo-link-left
+
+# 6. Flexify the navbar
+Using the files from the previous task for this task:
+
+in 6-styles.css, inside the /* Navbarsection
+
+*In the nav class selector
+    **Property: display, Value: flex
+*Inside the .nav .nav-item selector, remove the display declaration
+*Target .nav-item + .nav-item inside nav class
+    **Move the margin declaration from .nav .nav-item inside the new selector.
+*In the variables section
+    **Change the value of the variable nav-item-margin to be 0 0 0 2rem
