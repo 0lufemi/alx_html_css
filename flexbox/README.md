@@ -111,9 +111,9 @@ In your 5-styles.css file,
 *Remove header-logo and header-logo a rules
 *Remove the navbar-menu rule
 
-*In the variables section
+* In the variables section
 
-    **Remove
+    * * Remove
         ***header-logo-position
         ***header-logo-link-display
         ***header-logo-link-position
@@ -125,10 +125,10 @@ Using the files from the previous task for this task:
 
 in 6-styles.css, inside the /* Navbarsection
 
-*In the nav class selector
-    **Property: display, Value: flex
-*Inside the .nav .nav-item selector, remove the display declaration
-*Target .nav-item + .nav-item inside nav class
-    **Move the margin declaration from .nav .nav-item inside the new selector.
-*In the variables section
-    **Change the value of the variable nav-item-margin to be 0 0 0 2rem
+* In the nav class selector
+    * *Property: display, Value: flex
+* Inside the .nav .nav-item selector, remove the display declaration
+* Target .nav-item + .nav-item inside nav class
+    * *Move the margin declaration from .nav .nav-item inside the new selector.
+* In the variables section
+    * *Change the value of the variable nav-item-margin to be 0 0 0 2rem
