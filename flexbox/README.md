@@ -23,27 +23,27 @@ Using the files from the previous task as the base for this task:
 
 In the outermost section tag for services
 
-    Add the class section-services
+* Add the class section-services
 
 In the outermost section tag for works
 
-    Add the class section-works
+* Add the class section-works
 
 In the outermost section tag for about
 
-    Add the class section-about-us
+* Add the class section-about-us
 
 In the outermost section tag for latest_news
 
-    Add the class section-latest-news
+* Add the class section-latest-news
 
 In the outermost section tag for testimonial
 
-    Add the class section-testimonial
+* Add the class section-testimonial
 
 In the outermost section tag for contact
 
-    Add the class section-contact
+* Add the class section-contact
 
 # 2. Reverse order Latest news cards
 Using the files from the previous task for this task:
@@ -60,7 +60,7 @@ Before /*** 4. CARD ***/, add a new comment: /* Section Latest news ============
 
 Under that comment section, target the row class inside section-latest-news class
 
-    Property: flex-direction, Value: row-reverse
+* Property: flex-direction, Value: row-reverse
 
 The Latest news should appear in a reverse order.
 
@@ -75,25 +75,25 @@ Now, in your CSS file, before /*** 4. CARD ***/, add a new comment: /* Section S
 
 Under that comment section, add a new selector targeting the row class inside the section-services class
 
-    Property: flex-wrap, Value: wrap
+* Property: flex-wrap, Value: wrap
 
 # 4. Playing around with the spacing between flex service items
 Using the files from the previous task for this task:
 
 In 4-styles.css file, within the Grid section
 
-    In .col-1-3 selector
-        Replace the current width with calc((100% / 3) - 2rem)
+* In .col-1-3 selector
+    Replace the current width with calc((100% / 3) - 2rem)
 
-    In .col-1-2 selector
-        Replace the current width with calc((100% / 2) - 2rem)
+* In .col-1-2 selector
+    Replace the current width with calc((100% / 2) - 2rem)
 
-    In [class*='col-']
-        Remove the padding declaration
-        Set Property: margin to 1rem
+* In [class*='col-']
+    Remove the padding declaration
+    Set Property: margin to 1rem
 
-    In ul.row declaration
-        Replace the current margin with -1rem
+* In ul.row declaration
+    Replace the current margin with -1rem
 
 # 5. Flexify the header
 Using the files from the previous task for this task:
