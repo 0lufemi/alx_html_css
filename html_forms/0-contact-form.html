@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <p>* means required</p>
+            <legend>
+                Contact Form
+            </legend>
+            <p>
+                <label for="name">
+                    Name: <strong><span aria-label="required">*</span></strong>
+                    <input type="text" name="name" id="name" required>
+                </label>
+            </p>
+            <p>
+                <label for="email">
+                    Email Address: <strong><span aria-label="required">*</span></strong>
+                    <input type="email" name="user_email" id="email">
+                </label>
+            </p>
+            <p>
+                <label for="message">
+                    Message: <textarea name="user_message" id="message" cols="30" rows="10">Enter Your Message...</textarea>
+                </label>
+            </p>
+            <p>
+                <button type="submit">submit</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
