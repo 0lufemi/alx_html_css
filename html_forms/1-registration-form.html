@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body>
+    <p>
+        <h1>Registration Form</h1>
+    </p>
+    <form action="">
+        <fieldset>
+            * is required
+            <p>
+                <label for="name">
+                    Name: <strong><span aria-label="required">*</span></strong>
+                    <input type="text" name="name" id="name" required>
+                </label>
+            </p>
+            <p>
+                <label for="email">
+                    Email: <strong><span aria-label="required">*</span></strong>
+                    <input
+                    type="email"
+                    name="user_mail"
+                    id="email"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                </label>
+            </p>
+            <p>
+                <label for="password1">
+                    Password: <strong><span aria-label="required">*</span></strong>
+                    <input
+                    type="password"
+                    name="user_pwd1"
+                    id="password1"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                </label>
+            </p>
+            <p>
+                <label for="password2">
+                    Confirm Password: <strong><span aria-label="required">*</span></strong>
+                    <input
+                    type="password"
+                    name="user_pwd2"
+                    id="password2"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                </label>
+            </p>
+            <p>
+                <button>Submit</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
