@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Form with Radio Buttons</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Subscription Form</legend>
+            <p>All fields marked <strong>*</strong> are required</p>
+            <p>
+                <label for="name">
+                    Name: <strong><span aria-label="required">*</span></strong>
+                    <input type="text" name="user_name" id="name" required>
+                </label>
+            </p>
+            <p>
+                <label for="email">
+                    Email: <strong><span aria-label="required">*</span></strong>
+                    <input type="text" name="user_mail" id="email" required>
+                </label>
+            </p>
+            <p>
+                Subscription Type:
+                <label for="sub_type1">
+                    <input type="radio" name="Subscription" id="sub_type1"> Monthly
+                </label>
+                <label for="sub_type2">
+                    <input type="radio" name="Subscription" id="sub_type2"> Yearly
+                </label>
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
