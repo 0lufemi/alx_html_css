@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3. Feedback Form with Checkboxes and File Upload</title>
+</head>
+<body>
+    <h2>Feedback Form</h2>
+    <form action="">
+        <p>
+            <label for="name">
+                Name: <input type="text" name="name" id="name" required>
+            </label>
+        </p>
+        <p>
+            <label for="email">
+                Email: <input type="email" name="user_mail" id="email" required>
+            </label>
+        </p>
+        <p>
+            <p>Feedback Options:</p>
+            <label for="excellent"><input type="checkbox" name="feedback" id="excellent"> Excellent</label>
+            <label for="good"><input type="checkbox" name="feedback" id="good"> Good</label>
+            <label for="average"><input type="checkbox" name="feedback" id="average"> Average</label>
+            <label for="poor"><input type="checkbox" name="feedback" id="poor"> Poor</label>
+        </p>
+        <p>
+            <label for="fileUpload">
+                File Upload:
+                <input type="file" name="fileUpload" id="fileUpload" required>
+            </label>
+        </p>
+    </form>
+</body>
+</html>
