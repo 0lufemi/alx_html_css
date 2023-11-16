@@ -91,3 +91,37 @@ Implement JavaScript to generate a dynamic number of text input fields based on 
 * Check if any of the fields are empty. If any field is empty, prevent the form submission and display the error message “```Please fill in all fields```”.
 
 Note: You may need to use event listeners or other appropriate techniques to detect changes in the dropdown menu selection and handle form submission.
+
+## 3. Form Submission Handling
+Below is the content of ```form-submission.html```:
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="submitForm">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" >
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" >
+  <!-- Add more form fields as needed -->
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>
+```
+Implement JavaScript to handle form submission and perform validation before submitting.
+* Write a function called ```handleFormSubmit``` to handle the form submission.
+* Your JavaScript should be written in a separate file and used as an external script in the HTML code.
+* Add an event listener to the form element to listen for the “submit” event and call the ```handleFormSubmit``` function.
+* Inside the ```handleFormSubmit``` function, prevent the default form submission behavior using ```event.preventDefault()```.
+* Retrieve the values entered in the form fields using JavaScript.
+* Use JavaScript validation to ensure that all required fields are filled.
+* Check if the “name” and “email” fields are filled. If any of them are empty, display the error message “```Please fill in all required fields”```.
+* If all validations pass, display a success message “```Form submitted successfully!```” .
+* If any validations fail, do not submit the form and allow the user to correct the errors before submitting again.
+Note: You may need to use the DOM manipulation methods, such as getElementById(), to retrieve form field values and update the DOM to display error messages or success messages.
