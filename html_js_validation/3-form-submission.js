@@ -2,10 +2,8 @@ const form = document.getElementById('submitForm');
 const nameEl = document.getElementById('name');
 const emailEl = document.getElementById('email');
 
-form.addEventListener('submit', function(event) {
-    event.preventDefault();
-
-});
+//form submission event listener
+form.addEventListener('submit', handleFormSubmit);
 
 //check if email is valid
 const isEmailValid = (email) => {
@@ -25,9 +23,43 @@ const showSuccess = () => {
     success.textContent = 'Form submitted successfully!';
 }
 
+//check if required fields are filled
+const isRequired = (value) => {
+    if (value === '') {
+        return false
+    } else {
+        return true;
+    }
+}
+
 //check if name field is filled
-const checkName = (value) => {
+const checkName = () => {
     let valid = false;
 
-    if (nameEl.value)
+    if (!isRequired(nameEl.value)) {
+        showError();
+    } else {
+        showSuccess();
+        valid = true;
+    }
+    return valid;
 };
+
+//check if email field is filled
+const checkEmail = () => {
+    let valid = false;
+
+    if(!isRequired(emailEl.value)) {
+        showError();
+    } else {
+        showSuccess();
+        valid = true;
+    }
+    return valid;
+}
+
+
+//
+const handleFormSubmit = (event) => {
+    event.prevent
+}
